@@ -1,0 +1,336 @@
+body{
+    background-color:#ffffff;
+text-align: center;
+height: 1650px;
+}
+
+.background {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100vw; 
+    height: 100vh;
+    background-color:blue; 
+    z-index: -1000;
+  }
+
+  .animation {
+    position: absolute;
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 37%;
+    height: 300px;
+    animation: float 3s infinite ease;
+    animation-delay: 1s;
+  }
+
+
+  .frame {
+    position: absolute;
+    font-size: 24px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 0;
+    animation: frames 2s steps(4) infinite;
+  }
+  
+
+  @keyframes frames {
+    0%, 25% { opacity: 1; } /* Frame is visible */
+    26%, 100% { opacity: 0; } /* Frame is hidden */
+  }
+
+  .frame1 {
+    animation-delay: 0s;
+}
+.frame2 { 
+    animation-delay: .5s; 
+}
+.frame3 { 
+    animation-delay: 1s; 
+}
+.frame4 { 
+    animation-delay: 1.5s;
+ }
+
+
+
+ .photo1{
+    position: absolute;
+    width: 250px;
+    background-color: aliceblue;
+    height: 250px;
+    margin-left: 20%;
+    margin-top: 225px;
+    animation: float 3s infinite ease;
+ }
+ .photo1 img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover; 
+}
+
+ .photo2{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: aliceblue;
+    margin-top: 225px;
+    margin-left: 60%;
+    animation: float 3.2s infinite ease;
+ }
+ .photo2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+   }
+
+ .wave1{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 190px;
+    animation: water1 1.5s steps(1) infinite;
+}
+
+.wave2{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 190px;
+    animation: water2 1.5s steps(1) infinite;
+}
+
+  @keyframes water1 {
+    0% {
+      transform: scale(0); 
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+@keyframes water2 {
+    0% {
+      transform: scale(1); 
+    }
+    50% {
+        transform: scale(0);
+    }
+}
+
+.wave{
+    animation: water 4s infinite ease;
+}
+
+@keyframes water {
+    0% {
+      transform: translateY(0px); 
+    }
+    50% {
+        transform: translateY(40px);
+    }
+    100% {
+        transform: translateY(0px); 
+}
+}
+
+
+
+
+@keyframes float {
+    0% {
+      transform: translateY(0px); 
+    }
+    50% {
+        transform: translateY(50px);
+    }
+    100% {
+        transform: translateY(0px); 
+}
+}
+
+
+
+.photo3{
+    position: absolute;
+    width: 250px;
+    background-color: aliceblue;
+    height: 250px;
+    margin-left: 20%;
+    margin-top: 650px;
+    animation: float 3.2s infinite ease;
+ }
+ .photo3 img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover; 
+}
+
+ .photo4{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: aliceblue;
+    margin-top: 650px;
+    margin-left: 60%;
+    animation: float 3s infinite ease;
+ }
+ .photo4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+   }
+
+   .sign{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin-top: 720px;
+    margin-left: 40%;
+    animation: water 4s infinite ease;
+    animation-delay: .5s;
+ }
+ .sign img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+   }
+
+
+
+   .water{
+    animation: water 4s infinite ease;
+}
+
+.wave3{
+    position: absolute;
+    margin-top: 725px;
+    margin-left: 190px;
+    animation: water1 1.5s steps(1) infinite;
+}
+
+.wave4{
+    position: absolute;
+    margin-top: 725px;
+    margin-left: 190px;
+    animation: water2 1.5s steps(1) infinite;
+}
+
+
+
+
+
+
+
+.photo5{
+    position: absolute;
+    width: 250px;
+    background-color: aliceblue;
+    height: 250px;
+    margin-left: 20%;
+    margin-top: 1275px;
+    animation: float 3.2s infinite ease;
+ }
+ .photo5 img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover; 
+}
+
+ .photo6{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background-color: aliceblue;
+    margin-top: 1275px;
+    margin-left: 60%;
+    animation: float 3s infinite ease;
+ }
+ .photo6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+   }
+
+   .photo7{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    margin-top: 1275px;
+    margin-left: 40%;
+    animation: water 4s infinite ease;
+    animation-delay: .5s;
+ }
+ .photo7 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+   }
+
+
+
+   .water1{
+    animation: water 4s infinite ease;
+}
+
+.wave5{
+    position: absolute;
+    margin-top: 1350px;
+    margin-left: 190px;
+    animation: water1 1.5s steps(1) infinite;
+}
+
+.wave6{
+    position: absolute;
+    margin-top: 1350px;
+    margin-left: 190px;
+    animation: water2 1.5s steps(1) infinite;
+}
+
+.halotext{
+position: absolute;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bolder;
+font-size: 17px;
+width: 500px;
+margin-top: 1150px;
+margin-left: 31.5%;
+color:  rgb(228, 255, 0);
+animation: water 4s infinite ease;
+}
+
+.halotext2{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    width: 500px;
+    margin-top: 530px;
+    margin-left: 31.5%;
+    color:  rgb(228, 255, 0);
+    animation: water 4s infinite ease;
+    }
+
+
+.halotext3{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 17px;
+    width: 500px;
+    margin-top: 980px;
+    margin-left: 31.5%;
+    color:  rgb(228, 255, 0);
+    animation: water 4s infinite ease;
+    }
+
+    .halotext4{
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        font-size: 25px;
+        width: 500px;
+        margin-top: 10px;
+        margin-left: 31.5%;
+        color:  rgb(228, 255, 0);
+        animation: water 4s infinite ease;
+        }
